@@ -1,4 +1,5 @@
 body {
     font: 16px;
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
