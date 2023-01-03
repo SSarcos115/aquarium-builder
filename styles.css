@@ -1,6 +1,43 @@
 body {
     font: 16px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    text-align: center;
+}
+
+/* Nav Bar CSS */
+.navigation {
+}
+
+.nav_desktop {
+}
+
+/* Logo and account */
+.nav_top {
+}
+
+.nav_wrapper--top {
+}
+
+
+/* Nav Title Logo */
+.nav_logowrapper {
+}
+
+
+/* Individual Account Options */
+.nav_account {
+}
+
+.nav_account--login {
+}
+
+.nav_account--register {
+}
+
+.nav_account--country {
+}
+
+.nav_account--mode {
+}
+
+/* Bottom nav features */
+.nav_bottom {
 }
