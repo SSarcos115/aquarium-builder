@@ -2,6 +2,9 @@ body {
     font: 16px;
 }
 
+html, body, header, div, ul, li, a, section {
+}
+
 /* Nav Bar CSS */
 .navigation {
 }
@@ -86,7 +89,43 @@ body {
 .guides_info {
 }
 
-.guide_button {
+/* Guide Card Containers */
+.guides_cards {
+}
+
+.guides_cardList {
+}
+
+.guideGroup_card {
+}
+
+/* Top Part of Card */
+.guideGroup_content--wrapper1 {
+}
+
+.guide_title {
+}
+
+.guide_gallonSize {
+}
+
+/* Bottom Part of Card */
+.guideGroup_content--wrapper2 {
+}
+
+.guide_number {
+}
+
+.guide_images {
+}
+
+.guide_images--1 {
+}
+
+.guide_images--2 {
+}
+
+.guide_images--3 {
 }
 
 /* Guide Card Section */
@@ -99,6 +138,19 @@ body {
 .guideGroup_card {
 }
 
+/* Guide Button */
+.button_container {
+}
+
+.guide_button {
+}
+
 /* Main Page Community Section */
 .wrapper_community {
+}
+
+.community_subTitle {
+}
+
+.subTitle_header {
 }
