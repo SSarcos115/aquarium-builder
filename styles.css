@@ -2,7 +2,7 @@ body {
     font: 16px;
 }
 
-html, body, header, div, ul, li, a, section {
+html, body, header, div, ul, li, a, section, footer {
 }
 
 /* Nav Bar CSS */
@@ -191,6 +191,15 @@ html, body, header, div, ul, li, a, section {
 .log_title {
 }
 
+.log_keyProducts {
+}
+
+.build_equipment {
+}
+
+.build_specs {
+}
+
 .logGroup_content--wrapper2 {
 }
 
@@ -209,8 +218,48 @@ html, body, header, div, ul, li, a, section {
 .log_link--comments {
 }
 
+/* Cards that aren't featured but still use classes above */
+
+.logGroup {
+}
+
 .logGroup_card {
 }
 
+/* GO Community Button */
 .logGroup_action {
+}
+
+.button {
+}
+
+.button--icon {
+}
+
+/* Footer */
+.footer_logo {
+}
+
+.footer_logo--img {
+}
+
+.footer_column-1 {
+}
+
+.footer_main-nav {
+}
+
+.footer_column-2 {
+}
+
+.footer_secondary-nav {
+}
+
+.footer_column-3 {
+}
+
+.footer_copyright {
+}
+
+#copyright {
 }
