@@ -2,47 +2,89 @@ body {
     font: 16px;
 }
 
-html, body, header, div, ul, li, a, section, footer {
+html, body, header, nav, div, ul, li, a, section, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+nav, section, header {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+img {
+    height: auto;
+}
+
+li {
+    list-style-type: none;
 }
 
 /* Nav Bar CSS */
 .navigation {
+    
 }
 
 .nav_desktop {
 }
 
+
 /* Logo and account */
 .nav_top {
+    padding: 8px;
 }
 
-.nav_wrapper--top {
+.nav_wrapper, .nav_wrapper--top{
+    margin: 0px 46.826px;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 
 /* Nav Title Logo */
 .nav_logowrapper {
+    max-width: 180px;
 }
 
+.nav_logo {
+    display: block;
+}
+
+#nav_logo--full {
+    width: 180px;
+    height: 42px;
+}
 
 /* Individual Account Options */
 .nav_account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.nav_account--login {
+.nav_account--login, .nav_account--register, .nav_account--mode  {
+    margin: 10px;
 }
 
-.nav_account--register {
-}
 
 .nav_account--country {
+    margin-right: 50px;
 }
 
-.nav_account--mode {
-}
 
 /* Bottom nav */
 .nav_bottom {
+    display: flex;
+    justify-content: space-around;
 }
 
 .nav_wrapper--bottom{
