@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/d1ad965ae2.js" crossorigin="anonymous"></script>
     <title>Aquarium Builder (Working Title)</title>
 </head>   
 <body>
@@ -24,7 +25,13 @@
                             <li class="nav_account--login"><a href="#">Log In</a></li>
                             <li class="nav_account--register"><a href="#">Register</a></li>
                             <!-- Country selector will display  -->
-                            <li class="nav_account--country">Country</li>
+                            <li class="nav_account--country">
+                                <select name="languages" id="language-selector">
+                                    <option value="Eng" selected="selected">English</option>
+                                    <option value="Esp">Spanish</option>
+                                    
+                                </select>
+                            </li>
                             <!-- Button for light or dark mode *will get to later* -->
                             <li class="nav_account--mode">Button</li>
                         </ul>
@@ -46,7 +53,9 @@
                             <li class="nav_categories--fish-types">
                                 <a href="#">Fish Types</a>
                             </li>
-                            <li class="nav_search-bar">search bar</li>
+                            <li class="nav_search-bar">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </li>
                         </ul>
                     </div>
                 </section>

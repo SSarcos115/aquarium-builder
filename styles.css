@@ -41,6 +41,17 @@ li {
 /* Logo and account */
 .nav_top {
     padding: 8px;
+    background-color: #587291;
+    color: white;
+}
+
+.nav_top a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_top a:hover {
+    color: #C73E1D;
 }
 
 .nav_wrapper, .nav_wrapper--top{
@@ -78,37 +89,33 @@ li {
 
 
 .nav_account--country {
-    margin-right: 50px;
+    margin: 10px;
 }
 
 
 /* Bottom nav */
 .nav_bottom {
-    display: flex;
-    justify-content: space-around;
 }
 
 .nav_wrapper--bottom{
+
 }
 
 
 /* Nav Bottom Options */
 .navcategories {
+    display: flex;
+    margin-left: 50px;
 }
 
-.nav_categories--create {
+.nav_categories--create, .nav_categories--guides, .nav_categories--community, .nav_categories--fish-types {
+    margin: 10px;
 }
 
-.nav_categories--guides {
-}
-
-.nav_categories--community {
-}
-
-.nav_categories--fish-type {
-}
 
 .nav_search-bar {
+    position: absolute;
+    right: 60px;
 }
 
 /* Main Page Features */
