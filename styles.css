@@ -1,8 +1,13 @@
 body {
-    font: 16px;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-html, body, header, div, ul, li, a, section, footer {
+html, body, header, nav, div, ul, li, a, section, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
 }
 
 /* Nav Bar CSS */
@@ -17,6 +22,7 @@ html, body, header, div, ul, li, a, section, footer {
 }
 
 .nav_wrapper--top {
+    
 }
 
 
