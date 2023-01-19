@@ -1,0 +1,30 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "test",
+            "database": "airbnb",
+            "username": "cbass",
+            "password": "Ye72zEgxhomez6789!"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3307,
+            "driver": "MySQL",
+            "name": "test2",
+            "database": "airbnb",
+            "username": "cbass",
+            "password": "Ye72zEgxhomez6789!"
+        }
+    ]
+}

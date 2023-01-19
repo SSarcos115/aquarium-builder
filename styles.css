@@ -189,19 +189,15 @@ li {
 
 .guides { 
     display: flex;
-    justify-content: flex-start;
+    margin: 0px 189px;
+    justify-content: center;
     align-items: center;
-    margin: 0px 50px;
 }
 
 /* Left Hand side info */
 .guides_info {
-    display: flex;
-    flex-direction: column;
-    width: 308px;
-    height: 318px;
-    justify-content: center;
     color: white;
+    max-width: 25%;
 }
 
 .guides_info h1 {
@@ -247,15 +243,17 @@ li {
 
 /* Guide Card Containers */
 .guides_cards {
-    display: flex;
-    
+    align-self: center;
 }
 
 .guides_cardList {
+    display: flex;
+    gap: 15px;
 }
 
 .guideGroup_card {
     background-color: #b27e24;
+    text-align: center;
 }
 
 /* Top Part of Card */
@@ -279,15 +277,38 @@ li {
 }
 
 .guide_images {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    margin: 0px 8px;
+    margin-bottom: 8px;
+    min-height: 256px;
 }
 
 .guide_images--1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .guide_images--2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
 .guide_images--3 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+
 }
 
 /* Guide Card Section */
