@@ -8,13 +8,16 @@
     --second: #008478;
 }
 
+body {
+    background-color: var(--main_dark);
+}
+
 html, body, header, nav, div, ul, li, a, section, footer {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
     font-family: 'Righteous', cursive;
     font-family: 'Sofia Sans', sans-serif;    
     font-size: 16px;
@@ -140,8 +143,6 @@ li {
     display: flex;
     margin-left: 50px;
     height: 53px;
-    align-items: center;
-    gap: 25px;
 }
 
 
@@ -154,11 +155,13 @@ li {
 .nav_categories--create, .nav_categories--guides, .nav_categories--community, .nav_categories--fish-types {
     height: 100%;
     width: 112px;
-    text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 14px;
-    width: fit-content;
+    text-align: center;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
 }
 
 
@@ -182,6 +185,7 @@ li {
 .wrapper_guides {
     padding: 48px 0px;
     background-color: var(--second);
+    margin-bottom: 0px;
 }
 
 .guides { 
@@ -325,6 +329,9 @@ li {
 
 /* Main Page Community Section */
 .wrapper_community {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
 }
 
 .community_subTitle {
@@ -415,29 +422,67 @@ li {
 }
 
 /* Footer */
+footer {
+    background-color: var(--main_dark);
+    color: white;
+    padding: 48px 0px;
+}
+
+footer a:visited {
+    color: darkturquoise;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer_wrapper {
+    margin: 0px auto;
+    width: 75%;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .footer_logo {
+    font-size: 10px;
+    width: 15%;
 }
 
-.footer_logo--img {
+.footer_logo--img img{
+    height: 20%;
 }
 
-.footer_column-1 {
+.footer_logo ul li {
+    font-size: 20px;
+    font-weight: bolder;
 }
 
-.footer_main-nav {
+.footer_column_header{
+    width: 308px;
+    border-bottom: 2px solid white;
+    padding-bottom: .5rem;
+    font-size: 1.25rem;
+}
+
+.footer_nav {
+    line-height: 28px;
 }
 
 .footer_column-2 {
 }
 
-.footer_secondary-nav {
-}
-
 .footer_column-3 {
 }
 
+
 .footer_copyright {
+    text-align: center;
+    border-top: 1px solid grey;
 }
 
 #copyright {
+    font-size: 12px;
 }
