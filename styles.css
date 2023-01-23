@@ -375,17 +375,23 @@ li {
     background-color: white;
     display: inline-block;
     width: 100%;
-    padding-top: 25px;
+    padding: 40px 0px;
 }
 
 .community_subTitle {
     border-bottom: 1px solid black;
     width: 75%;
     margin: auto;
+    margin-bottom: 16px;
 }
 
 .subTitle_header {
     font-size: small;
+    padding-bottom: 8px;
+}
+
+.subTitle_header h2 {
+    margin: 0px;
 }
 
 /* Tank Submissions section */
@@ -395,8 +401,11 @@ li {
 }
 
 .userbuildlist {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    padding-bottom: 16px;
+    text-align: left;
 }
 
 /* Featured Section */
@@ -411,6 +420,10 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.fa-earth-americas {
+    color: black;
 }
 
 .featured_message h1{
@@ -428,6 +441,11 @@ li {
 
 /* Username Script Retrieval */
 .log_author {
+
+}
+
+.log_author img{
+    width: 5%;
 }
 
 .userAvatar {
@@ -436,6 +454,8 @@ li {
 .log_image {
     width: 215px;
     height: 215px;
+    position: relative;
+    overflow: hidden;
 }
 
 .log_title {
