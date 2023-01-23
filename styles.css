@@ -2,7 +2,7 @@
 
 
 :root {
-    --hover: #C73E1D;
+    --hover: #ff5a31;
     --main: #174C76;
     --main_dark: #1c5a8d;
     --bottom_hover: #306EA1;
@@ -159,10 +159,11 @@ li {
 /* Icon Margins */
 .fa-solid {
     margin-right: 5px;
+    color: darkgrey;
 }
 
 .fa-magnifying-glass, .fa-fish, .fa-globe, .fa-list, .fa-file-circle-plus {
-    color: darkgrey;
+    /* color: darkgrey; */
 }
 
 .nav_categories--create, .nav_categories--guides, .nav_categories--community, .nav_categories--fish-types {
@@ -255,15 +256,22 @@ li {
     display: flex;
     align-self: center;
     margin-right: 25%;
-    background-color: #0078d4;
+    background-color: #1f9af8;
 }
 
---fa-pull-margin: 5px;
 
 .button_container:hover {
     background-color: #01487e;
     transition: .1s;
     transition-property: #01487e;
+}
+
+.fa-list-check {
+    color: black;
+}
+
+.guide_button:hover .fa-list-check {
+    color: white;
 }
 
 .guide_button:hover {
