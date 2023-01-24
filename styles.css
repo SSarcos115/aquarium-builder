@@ -398,29 +398,34 @@ li {
 .completed_tanks {
     width: 75%;
     margin: auto;
+    height: auto;
 }
 
 .userbuildlist {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2rem;
-    padding-bottom: 16px;
-    text-align: left;
+    grid-gap: 2rem
 }
 
 /* Featured Section */
 .logGroup_card--featured {
     border: 1px solid green;
     background-color: var(--hover);
+    grid-column: 1 / 3;
     display: flex;
+    gap: 2rem;
+    flex-basis: 1px 1px auto;
+    padding: 9px;
 }
 
 .featured_message {
-    padding: 8px 16px 0px 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 8px 16px 0px 16px;
+    width: 50%;
 }
+
 
 .fa-earth-americas {
     color: black;
@@ -428,12 +433,26 @@ li {
 
 .featured_message h1{
     color: white;
+    margin: 32px;
+}
+
+.featured_message p{
+    margin-bottom: 0px;
+}
+
+#featured_log_card {
+    width: 50%;
 }
 
 .logGroup_card {
 }
 
 .logGroup_target {
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
 }
 
 .logGroup_content--wrapper1 {
@@ -441,21 +460,28 @@ li {
 
 /* Username Script Retrieval */
 .log_author {
-
+    background-color: var(--main_dark);
+    margin: auto;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
 }
 
-.log_author img{
-    width: 5%;
+.userAvatar img{
+    width: 24px;
+    height: 24px;
 }
 
 .userAvatar {
+    width: auto;
+    height: auto;
 }
 
 .log_image {
-    width: 215px;
-    height: 215px;
-    position: relative;
-    overflow: hidden;
+    background-image: url('../aquarium-website/Images/Aquarium\ Test\ Image\ .JPG');
+    display: block;
+    background-size: cover;
+    background-position: center center;
 }
 
 .log_title {
