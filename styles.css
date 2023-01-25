@@ -441,21 +441,18 @@ li {
 }
 
 #featured_log_card {
-    width: 50%;
+
 }
 
 .logGroup_card {
+    
 }
 
 .logGroup_target {
-    /* position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; */
 }
 
 .logGroup_content--wrapper1 {
+    width: auto;
 }
 
 /* Username Script Retrieval */
@@ -473,15 +470,16 @@ li {
 }
 
 .userAvatar {
-    width: auto;
-    height: auto;
+
 }
 
 .log_image {
-    background-image: url('../aquarium-website/Images/Aquarium\ Test\ Image\ .JPG');
-    display: block;
+    background-image: url(/Aquarium\ Test\ Image\ .JPG);
+    background-position: 100% 100%;
     background-size: cover;
-    background-position: center center;
+    padding: 62px;
+    outline: 2px solid black;
+    display: block;
 }
 
 .log_title {
