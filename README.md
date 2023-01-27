@@ -11,5 +11,5 @@ I really liked how simple the website felt while still having complexity within 
 Thank you for checking out my first full-length, work-in-progess project. I hope you enjoy! 
 
 
-- Sebastian
+  Sebastian
 
