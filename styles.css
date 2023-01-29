@@ -407,6 +407,7 @@ li {
     grid-gap: 2rem
 }
 
+
 /* Featured Section */
 .logGroup_card--featured {
     border: 1px solid green;
@@ -422,11 +423,12 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 8px 16px 0px 16px;
     width: 50%;
     text-align: center;
 }
-
 .featured_message * {
     font-weight: 700;
 }
@@ -446,6 +448,7 @@ li {
     font-size: 2rem;
     color: white;
     margin: 32px;
+    font-size: 2rem;
     width: 100%;
 }
 
@@ -455,17 +458,17 @@ li {
 
 #featured_log_card {
     width: 50%;
+    width: 50%;
 }
 
 .logGroup_card {
-    
+    background-color: white;
 }
 
 .logGroup_target {
 }
 
 .logGroup_content--wrapper1 {
-    width: auto;
 }
 
 /* Username Script Retrieval */
@@ -490,9 +493,6 @@ li {
     height: 24px;
 }
 
-.userAvatar {
-
-}
 
 .log_image {
     background-image: url(/Aquarium\ Test\ Image\ .JPG);
@@ -506,9 +506,17 @@ li {
 }
 
 .log_title {
+    margin: 16px 0px;
+    padding: 0px 16px;
+}
+
+
+.log_title a:visited {
+    color: black;
 }
 
 .log_keyProducts {
+    padding: 0px 16px;
 }
 
 .build_equipment {
@@ -518,22 +526,36 @@ li {
 }
 
 .logGroup_content--wrapper2 {
+    margin-top: 24px;
 }
 
 .log_numbers {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 1rem;
+    font-weight: 700;
+    align-items: center;
+    border-top: 1px solid lightgray;
 }
 
 .log_price {
+    margin: 0px;
 }
 
 .log_links {
+    text-align: right;
+    margin: 0px;
 }
 
-.log_link-followers {
+.log_link-followers, .log_link--comments {
+    margin-left: 16px;
 }
 
-.log_link--comments {
+.fa-arrow-up, .fa-comments {
+    color: black;
+    margin-right: 6px;
 }
+
 
 /* Cards that aren't featured but still use classes above */
 
