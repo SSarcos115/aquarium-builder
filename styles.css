@@ -413,35 +413,48 @@ li {
     background-color: var(--hover);
     grid-column: 1 / 3;
     display: flex;
-    gap: 2rem;
-    flex-basis: 1px 1px auto;
     padding: 9px;
+    justify-content: space-between;
 }
 
 .featured_message {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 8px 16px 0px 16px;
     width: 50%;
+    text-align: center;
 }
 
+.featured_message * {
+    font-weight: 700;
+}
 
 .fa-earth-americas {
     color: black;
 }
 
-.featured_message h1{
-    color: white;
-    margin: 32px;
+
+.featured_message > p{
+    margin-bottom: 0px;
+    font-size: 1.125rem;
+    width: 50%;
 }
 
-.featured_message p{
-    margin-bottom: 0px;
+.featured_message > h1 {
+    font-size: 2rem;
+    color: white;
+    margin: 32px;
+    width: 100%;
+}
+
+.featured_message > p > a:visited{
+    color: #326771;
 }
 
 #featured_log_card {
-
+    width: 50%;
 }
 
 .logGroup_card {
@@ -464,6 +477,14 @@ li {
     align-items: center;
 }
 
+#username {
+    margin-left: 7px;
+}
+
+#username:visited {
+    color: white;
+}
+
 .userAvatar img{
     width: 24px;
     height: 24px;
@@ -475,10 +496,12 @@ li {
 
 .log_image {
     background-image: url(/Aquarium\ Test\ Image\ .JPG);
-    background-position: 100% 100%;
+    background-position: center center;
     background-size: cover;
-    padding: 62px;
-    outline: 2px solid black;
+    background-repeat: no-repeat;
+    /* padding: 22em 2em 0px; */
+    min-height: 215px;
+    /* outline: 2px solid black; */
     display: block;
 }
 
