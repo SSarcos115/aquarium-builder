@@ -2,11 +2,11 @@
 
 
 :root {
-    --hover: #ff5a31;
-    --main: #174C76;
-    --main_dark: #1c5a8d;
-    --bottom_hover: #306EA1;
-    --second: #008478;
+    --hover: #fc5f37;
+    --main_dark: #163e5f;
+    --main: #113452;
+    --bottom_hover: #306ea145;
+    --second: #0a82789d;
 }
 
 body {
@@ -134,7 +134,7 @@ li {
 
 .nav_wrapper--bottom{
     background-color: var(--main_dark);
-    border: 1px solid grey;
+    border: 1px solid rgba(128, 128, 128, 0.288);
     border-bottom: none;
     border-width: thin;
     display: flex;
@@ -174,8 +174,8 @@ li {
     justify-content: center;
     font-size: 14px;
     text-align: center;
-    border-left: thin solid grey;
-    border-right: thin solid grey;
+    border-left: thin solid rgba(128, 128, 128, 0.288);
+    border-right: thin solid rgba(128, 128, 128, 0.288);
 }
 
 .nav_bottom_link:hover {
@@ -193,8 +193,8 @@ li {
 
 .nav_search-bar {
     height: auto;
-    border-left: thin solid grey;
-    border-right: thin solid grey;
+    border-left: thin solid rgba(128, 128, 128, 0.288);
+    border-right: thin solid rgba(128, 128, 128, 0.288);
     display: flex;
     align-items: center;
     padding: 15px;
@@ -257,6 +257,7 @@ li {
     align-self: center;
     margin-right: 25%;
     background-color: #1f9af8;
+    border-radius: 10px;
 }
 
 
@@ -372,7 +373,7 @@ li {
 
 /* Main Page Community Section */
 .wrapper_community {
-    background-color: white;
+    background-color: rgb(243, 243, 243);
     display: inline-block;
     width: 100%;
     padding: 40px 0px;
@@ -410,7 +411,6 @@ li {
 
 /* Featured Section */
 .logGroup_card--featured {
-    border: 1px solid green;
     background-color: var(--hover);
     grid-column: 1 / 3;
     display: flex;
@@ -423,11 +423,9 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    justify-content: center;
     text-align: center;
     padding: 8px 16px 0px 16px;
     width: 50%;
-    text-align: center;
 }
 .featured_message * {
     font-weight: 700;
@@ -439,6 +437,12 @@ li {
 
 
 .featured_message > p{
+    margin-bottom: 0px;
+    font-size: 1.125rem;
+    width: 50%;
+}
+
+.featured_message > p > a{
     margin-bottom: 0px;
     font-size: 1.125rem;
     width: 50%;
@@ -456,9 +460,19 @@ li {
     color: #326771;
 }
 
+.featured_message > p > a:hover{
+    text-decoration: underline;
+}
+
 #featured_log_card {
     width: 50%;
     width: 50%;
+}
+
+#featured_log_card:hover {
+    outline:2.5px solid var(--main_dark);
+    transition: .1s;
+    transition-property: var(--main_dark);
 }
 
 .logGroup_card {
@@ -466,6 +480,11 @@ li {
 }
 
 .logGroup_target {
+    position: absolute;
+    display: block;
+    width: 251.850px;
+    height: 436.600px;
+    
 }
 
 .logGroup_content--wrapper1 {
@@ -480,11 +499,11 @@ li {
     align-items: center;
 }
 
-#username {
+.username {
     margin-left: 7px;
 }
 
-#username:visited {
+.username:visited {
     color: white;
 }
 
@@ -493,21 +512,31 @@ li {
     height: 24px;
 }
 
+#log_feature_image {
+    background-image: url(/Aquarium\ Test\ Image\ .JPG);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 215px;
+    display: block;
+}
 
 .log_image {
     background-image: url(/Aquarium\ Test\ Image\ .JPG);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* padding: 22em 2em 0px; */
-    min-height: 215px;
-    /* outline: 2px solid black; */
+    min-height: 225px;
     display: block;
 }
 
 .log_title {
     margin: 16px 0px;
     padding: 0px 16px;
+}
+
+.log_title > a {
+    font-weight: 800;
 }
 
 
@@ -519,7 +548,8 @@ li {
     padding: 0px 16px;
 }
 
-.build_equipment {
+.build_equipment, .build_specs {
+    font-weight: 400;
 }
 
 .build_specs {
@@ -545,6 +575,7 @@ li {
 .log_links {
     text-align: right;
     margin: 0px;
+    font-size: .75rem;
 }
 
 .log_link-followers, .log_link--comments {
@@ -560,20 +591,39 @@ li {
 /* Cards that aren't featured but still use classes above */
 
 .logGroup {
-    border: 1px solid green;
 }
 
-.logGroup_card {
+.logGroup:hover {
+    outline: 2.5px solid var(--hover);
+    transition: .1s;
+    transition-property: var(--hover);
 }
 
 /* GO Community Button */
 .logGroup_action {
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.button {
-}
 
 .button--icon {
+    background-color: #1f9af8;
+    color: white;
+    padding: 8px 14px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.button--icon:hover {
+    background-color: #176eb1;
+}
+
+.fa_custom {
+    color: white;
 }
 
 /* Footer */
