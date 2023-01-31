@@ -2,7 +2,7 @@ Hi there!
 
 Welcome to my aquarium builder project (still working on the title name)...
 
-Anyways, this passion project is something I have thought of for months before I started. 
+Anyways, this passion project is something I have thought of for months before I started learning to code.
 
 I took direct inspiration from Pc Part Picker (https://pcpartpicker.com/) on how it should look and behave. 
 
