@@ -34,6 +34,7 @@ a {
     background-color: transparent;
 }
 
+
 img {
     height: auto;
 }
@@ -302,7 +303,7 @@ li {
 }
 
 .guideGroup_card:hover {
-     box-shadow: 0 0 0 2.5px #36393B;
+     box-shadow: 0 0 0 2.75px #292b2d;
 }
 
 /* Top Part of Card */
@@ -471,7 +472,7 @@ li {
 
 #featured_log_card:hover {
     outline:2.5px solid var(--main_dark);
-    transition: .1s;
+    transition-delay: 50ms;
     transition-property: var(--main_dark);
 }
 
@@ -595,7 +596,7 @@ li {
 
 .logGroup:hover {
     outline: 2.5px solid var(--hover);
-    transition: .1s;
+    transition-delay: 50ms;
     transition-property: var(--hover);
 }
 
@@ -690,4 +691,47 @@ footer a:hover {
 
 #copyright {
     font-size: 12px;
+}
+
+/* LOGIN PAGE */
+.login_wrapper {
+    margin: 0;
+    height: 600px;
+    background-color: var(--login_background);
+}
+
+.account_header {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+
+.login_content {
+    background-color: gainsboro;
+    width: 25%;
+    margin: auto;
+    padding: 50px;
+}
+
+.login_or_create_options {
+}
+
+.login_fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_fields > h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.forgot_password {
+}
+
+.register_wrapper {
+}
+
+.register_action {
 }
