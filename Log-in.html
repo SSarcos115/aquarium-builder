@@ -49,15 +49,19 @@
             <div class="login_or_create_options">
                 <div class="login_fields">
                     <h2>Sign In</h2>
-                    <input type="text" placeholder="Username or Email" name="username" required>
-                    <input type="text" placeholder="Password" name="password" 
+                    <input type="text" placeholder="Username or Email" name="username" maxlength="75" required>
+                    <input type="text" placeholder="Password" name="password" maxlength="75"
                     required>
-                    <button type="submit">Sign In</button>
+                    <a href="#" class="submit_btn" role="button">Sign In</a>
+                </div>
+                <div class="forgot_password_wrapper">
                     <a href="#" class="forgot_password">Forgot Password?</a>
                 </div>
                 <div class="register_wrapper">
                     <h2>Not a Member?</h2>
-                    <a href="#" class="register_action">Register here</a>
+                    <p>
+                        <a href="#" class="register_action">Register here</a>
+                    </p>
                 </div>
             </div>
         </div>
