@@ -733,7 +733,14 @@ footer a:hover {
     outline: 1px solid var(--second);
 }
 
+
+/* INPUT FIELDS */
 input[type=text] {
+    border: none;
+    border-radius: 2.5px;
+}
+
+input[type=email] {
     border: none;
     border-radius: 2.5px;
 }
@@ -805,6 +812,121 @@ input::placeholder {
 }
 
 .register_action:hover {
+    background-color: #388ac9;
+    color: white;
+    transition: .1s;
+    transition-property: #388ac9;
+}
+
+/* REGISTER PAGE */
+.register_page_wrapper {
+}
+
+.register_header {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.register_content {
+    background-color: rgb(228, 228, 228);
+    width: 31%;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 50px;
+}
+
+
+.register_fields {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 12px;
+}
+
+.register_fields > h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.register_fields label input[type=email], input[type=text] {
+    font-size: 1.25rem;
+    width: 100%;
+    height: 40px;
+}
+
+.register_fields label input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+}
+
+.register_fields label input:hover {
+    outline: 1px solid var(--second);
+}
+
+
+.register_fields > .register_btn {
+   background-color: #46aefe;
+   color: rgb(255, 255, 255);
+   height: 27px;
+   text-align: center;
+   padding-top: 5px;
+   font-size: 1.25rem;
+}
+
+.register_fields a:hover {
+    text-decoration: underline;
+}
+
+.register_fields a {
+    color: #176eb1;
+}
+
+.register_fields > .register_btn:hover {
+    background-color: #388ac9;
+    text-decoration: none;
+}
+
+#account_activation_note {
+    margin-top: -15px;
+    font-size: .85rem;
+}
+
+#do_not_share_info, #do_not_share_info > a {
+    font-size: .85rem;
+}
+
+
+.sign_in_wrapper {
+    margin-top: 50px;
+}
+
+.sign_in_wrapper > h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 1.25rem;
+}
+
+.sign_in_wrapper > p {
+    text-align: center;
+    border: 2px solid #388ac9;
+    box-sizing: border-box;
+}
+
+.sign_in_action {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.sign_in_action:visited {
+    color: #388ac9;
+}
+
+.sign_in_action:hover {
     background-color: #388ac9;
     color: white;
     transition: .1s;

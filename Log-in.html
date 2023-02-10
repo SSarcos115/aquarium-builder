@@ -24,8 +24,8 @@
                             </li>
                         </ul>
                         <ul class="nav_account">
-                            <li class="nav_account--login"><a href="#" class="nav_visit nav_hover" >Log In</a></li>
-                            <li class="nav_account--register"><a class="nav_visit nav_hover" href="#">Register</a></li>
+                            <li class="nav_account--login"><a href="/Log-in.html" class="nav_visit nav_hover">Log In</a></li>
+                            <li class="nav_account--register"><a class="nav_visit nav_hover" href="/Register.html">Register</a></li>
                             <!-- Country selector will display  -->
                             <li class="nav_account--language">
                                 <select name="languages" id="language-selector">
@@ -49,9 +49,13 @@
             <div class="login_or_create_options">
                 <div class="login_fields">
                     <h2>Sign In</h2>
-                    <input type="text" placeholder="Username or Email" name="username" maxlength="75" required>
-                    <input type="text" placeholder="Password" name="password" maxlength="75"
-                    required>
+                    <label for="username or email">
+                        <input type="text" placeholder="Username or Email" name="username" maxlength="75" required>
+                    </label>
+                    <label for="password">
+                        <input type="text" placeholder="Password" name="password" maxlength="75"
+                        required>
+                    </label>
                     <a href="#" class="submit_btn" role="button">Sign In</a>
                 </div>
                 <div class="forgot_password_wrapper">
@@ -60,7 +64,7 @@
                 <div class="register_wrapper">
                     <h2>Not a Member?</h2>
                     <p>
-                        <a href="#" class="register_action">Register here</a>
+                        <a href="/Register.html" class="register_action">Register here</a>
                     </p>
                 </div>
             </div>

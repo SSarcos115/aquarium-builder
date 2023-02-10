@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/d1ad965ae2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation" role="navigation">
+            <div class="nav_desktop">
+                <section class="nav_top">
+                    <div class="nav_wrapper nav_wrapper--top">
+                        <ul class="nav_logowrapper" role="presentation">
+                            <li>
+                                <a href="/Homepage.html" class="nav_logo">
+                                    <img src="/Images/Aquarium BUilder - resize.png" alt="Logo" id="nav_logo--full">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav_account">
+                            <li class="nav_account--login"><a href="/Log-in.html" class="nav_visit nav_hover" >Log In</a></li>
+                            <li class="nav_account--register"><a class="nav_visit nav_hover" href="/Register.html">Register</a></li>
+                            <!-- Country selector will display  -->
+                            <li class="nav_account--language">
+                                <select name="languages" id="language-selector">
+                                    <option value="Eng" selected="selected">English</option>
+                                    <option value="Esp">Spanish</option>
+                                    
+                                </select>
+                            </li>
+                            <!-- Button for light or dark mode *will get to later* -->
+                            <li class="nav_account--mode">Button</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+        </nav>
+    </header>
+    <section class="register_page_wrapper">
+        <h1 class="register_header">Register</h1>
+        <div class="register_content">
+            <div>
+                <div class="register_fields">
+                    <h2>Create a new account</h2>
+                    <label for="username">
+                        <input type="text" placeholder="Username" name="username" maxlength="75" required>
+                    </label>
+                    <label for="email">
+                        <input type="email" placeholder="Email" name="email" maxlength="75" required>
+                    </label>
+                    <label for="email confirmation">
+                        <input type="email" placeholder="Email (again)" name="email_confirmation" maxlength="75" required>
+                    </label>
+                    <p id="account_activation_note">
+                        Note: An account activation email will be sent to the email address you provide.
+                    </p>
+                    <label for="password">
+                        <input type="text" placeholder="Password" name="password" maxlength="75"
+                    required>
+                    </label>
+                    <label for="password confirmation">
+                        <input type="text" placeholder="Password (again)" name="password_confirmation" maxlength="75"
+                    required>
+                    </label>
+                    <label for="terms of service" class="container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        I have read and consent to the 
+                        <a href="#">Terms of Service</a>
+                    </label>
+                    <label for="user code of conduct" class="container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        I have read and consent to the 
+                        <a href="#">User Code of Conduct</a>
+                    </label>
+                    <p id="do_not_share_info">
+                        By registering you consent to allow AquariumBuilder to retain personal information consisting of your email address and IP addresses used to access the site. AquariumBuilder does not sell your personal information. Details on what data we retain and how we use it can be found in our
+                        <a href="#">Privacy Policy</a>
+                    </p>
+                    <a href="#" class="register_btn" role="button">Register</a>
+                </div>
+                <div class="sign_in_wrapper">
+                    <h2>Already a Member?</h2>
+                    <p>
+                        <a href="#" class="sign_in_action">Sign In</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
