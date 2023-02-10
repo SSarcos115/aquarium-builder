@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sofia+Sans:wght@100;400&display=swap');
 
 
+
 :root {
     --hover: #fc5f37;
     --main_dark: #163e5f;
@@ -898,7 +899,6 @@ input::placeholder {
     font-size: .85rem;
 }
 
-
 .sign_in_wrapper {
     margin-top: 50px;
 }
@@ -931,4 +931,26 @@ input::placeholder {
     color: white;
     transition: .1s;
     transition-property: #388ac9;
+}
+
+/* Media Queries */
+@media (max-width: 1349px) {
+    .guides { 
+        display: flex;
+        flex-direction: column;
+        margin: 0px 75px;
+    }
+
+    .guides_info {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .guides_info > h1 {
+        
+    }
+
+    .guides_info > p {
+        padding-right: 0px;
+    }
 }
