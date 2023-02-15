@@ -298,6 +298,14 @@ li {
     gap: 15px;
 }
 
+.guideGroup_target {
+    position: absolute;
+    display: block;
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+}
+
 .guideGroup_card {
     background-color: #AD8A64;
     text-align: center;
@@ -486,7 +494,6 @@ li {
     display: block;
     width: 251.850px;
     height: 436.600px;
-    
 }
 
 .logGroup_content--wrapper1 {
@@ -931,6 +938,62 @@ input::placeholder {
     color: white;
     transition: .1s;
     transition-property: #388ac9;
+}
+
+/* Guide Page */
+.guide_page_wrapper {
+    margin: 0;
+    background-color: rgb(243, 243, 243);
+}
+
+.guide_page_header_wrapper {
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 9px;
+    background-color: #AD8A64;
+    margin-bottom: 50px;
+}
+
+.guide_page_items {
+    margin: auto;
+    width: 75%;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.guide_tanks_header {
+    border-bottom: 1px solid black;
+}
+
+.guide_tanks_header > h2 {
+    margin: 0px;
+    padding-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.guide_page_wrap {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.guidepage_card {
+    background-color: #AD8A64;
+    margin: 15px 0px;
+    flex: 1 1 auto;
+}
+
+.guidepage_card:hover {
+    box-shadow: 0 0 0 2.75px #292b2d;
+}
+
+.guide_page_content--wrapper1 {
+    padding: 15px;
+}
+
+.guide_page_content--wrapper2 {
+    padding-bottom: 2px;
 }
 
 /* Media Queries */
