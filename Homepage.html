@@ -16,6 +16,7 @@
             <div class="nav_desktop">
                 <section class="nav_top">
                     <div class="nav_wrapper nav_wrapper--top">
+                        <!-- Logo -->
                         <ul class="nav_logowrapper" role="presentation">
                             <li>
                                 <a href="/Homepage.html" class="nav_logo">
@@ -23,15 +24,20 @@
                                 </a>
                             </li>
                         </ul>
+
+                        
                         <ul class="nav_account">
+                            <!-- Log In -->
                             <li class="nav_account--login"><a href="/Log-in.html" class="nav_visit nav_hover" >Log In</a></li>
+
+                            <!-- Register -->
                             <li class="nav_account--register"><a class="nav_visit nav_hover" href="/Register.html">Register</a></li>
-                            <!-- Country selector will display  -->
+
+                            <!-- Language Selector -->
                             <li class="nav_account--language">
                                 <select name="languages" id="language-selector">
                                     <option value="Eng" selected="selected">English</option>
                                     <option value="Esp">Spanish</option>
-                                    
                                 </select>
                             </li>
                             <!-- Button for light or dark mode *will get to later* -->
@@ -39,6 +45,8 @@
                         </ul>
                     </div>
                 </section>
+
+                <!-- Bottom Section of Nav -->
                 <section class="nav_bottom">
                     <div class="nav_wrapper--bottom">
                         <ul class="nav_categories">
@@ -60,26 +68,33 @@
                     </div>
                 </section>
             </div>
-
         </nav>
     </header>
+
+    <!-- Main Page -->
+
     <section class="main_wrapper">
         <div id="homepage">
             <!-- To make intro for small screens -->
             <div class="wrapper_smallScreenIntro"></div>
             <div class="wrapper_guides">
                 <section class="guides">
+
+                    <!-- Welcome Message for Guides Section -->
                     <div class="guides_info">
                         <h1>Tank Guides</h1>
                         <p>Building your first aquarium and need ideas on where to get started? Explore our guides and start building!</p>
                         <div class="button_container">
-                            <a href="#" class="guide_button"><i class="fa-solid fa-list-check"></i>View Guides</a>
+                            <a href="/Guides.html" class="guide_button"><i class="fa-solid fa-list-check"></i>View Guides</a>
                         </div>
                     </div>
+
+                    <!-- Build Guide Cards -->
                     <div class="guides_cards">
                         <ul class="guides_cardList">
+                            <!-- Entry Level Card -->
                             <li class="guideGroup_card">
-                                <a href="#"></a>
+                                <a href="/Guides.html#entryTankPage_link" id="entryTankPage_link" class="guideGroup_target"></a>
                                 <div class="guideGroup_content--wrapper1">
                                     <h1 class="guide_title">Entry Level Tanks</h1>
                                     <ul class="guide_gallonSize">
@@ -107,10 +122,11 @@
                                         </li>
                                     </ul>
                                 </div>
-                            
                             </li>
+
+                            <!-- Mid-Size Card -->
                             <li class="guideGroup_card">
-                                <a href="#" class="guideGroup_target"></a>
+                                <a href="/Guides.html#mid-sizeTankPage_link" class="guideGroup_target" id="mid-sizeTankPage_link"></a>
                                 <div class="guideGroup_content--wrapper1">
                                     <h1 class="guide_title">Mid-Size Tanks</h1>
                                     <ul class="guide_gallonSize">
@@ -139,8 +155,10 @@
                                     </ul>
                                 </div>
                             </li>
+
+                            <!-- Large Tank Card -->
                             <li class="guideGroup_card">
-                                <a href="#"></a>
+                                <a href="/Guides.html#largeTankPage_link" id="largeTankPage_link" class="guideGroup_target"></a>
                                 <div class="guideGroup_content--wrapper1">
                                     <h1 class="guide_title">Large Tanks</h1>
                                     <ul class="guide_gallonSize">
@@ -171,11 +189,16 @@
                             </li>
                         </ul>
                     </div>
+
+                    <!-- Guide Button for Media Querie -->
                     <div class="button_container_hidden" hidden>
-                        <a href="#" class="guide_button"><i class="fa-solid fa-list-check"></i>View Guides</a>
+                        <a href="/Guides.html" class="guide_button"><i class="fa-solid fa-list-check"></i>View Guides</a>
                     </div>
+
                 </section>
             </div>
+
+            <!-- Community Section of Main Page -->
             <div class="wrapper_community">
                 <section class="community_subTitle">
                     <div class="subTitle_header">
@@ -184,6 +207,8 @@
                 </section>
                 <section class="completed_tanks">
                     <ul class="userbuildlist">
+
+                        <!-- Featured User Section -->
                         <li class="logGroup_card--featured">
                             <div class="featured_message" id="feature-msg">
                                 <p>
@@ -194,6 +219,8 @@
                                     <a href="#">Cbass_1996!</a>
                                 </p>
                             </div>
+
+                            <!-- Log Card 1 -->
                             <div class="logGroup_card" id="featured_log_card">
                                 <a href="#" class="logGroup_target"></a>
                                 <div class="logGroup_content--wrapper1">
@@ -227,6 +254,8 @@
                                 </div>
                             </div>
                         </li>
+
+                        <!-- Log Card 2 -->
                         <li class="logGroup logGroup_card">
                             <a href="/" class="logGroup_target"></a>
                             <div class="logGroup_content--wrapper1">
@@ -257,6 +286,8 @@
                                         </span>
                             </div>
                         </li>
+
+                        <!-- Log Card 3 -->
                         <li class="logGroup logGroup_card">
                             <a href="/" class="logGroup_target"></a>
                             <div class="logGroup_content--wrapper1">
@@ -286,6 +317,8 @@
                                             <i class="fa-solid fa-comments"></i>0
                                         </span>
                         </li>
+
+                        <!-- Log Card 4 -->
                         <li class="logGroup logGroup_card">
                             <a href="/" class="logGroup_target"></a>
                             <div class="logGroup_content--wrapper1">
@@ -315,6 +348,8 @@
                                             <i class="fa-solid fa-comments"></i>0
                                         </span>
                         </li>
+
+                        <!-- Log Card 5 -->
                         <li class="logGroup logGroup_card">
                             <a href="/" class="logGroup_target"></a>
                             <div class="logGroup_content--wrapper1">
@@ -344,6 +379,8 @@
                                             <i class="fa-solid fa-comments"></i>0
                                         </span>
                         </li>
+
+                        <!-- Log Card 6 -->
                         <li class="logGroup logGroup_card">
                             <a href="/" class="logGroup_target"></a>
                             <div class="logGroup_content--wrapper1">
@@ -373,6 +410,8 @@
                                             <i class="fa-solid fa-comments"></i>0
                                         </span>
                         </li>
+
+                        <!-- Community Button -->
                         <li class="logGroup_action">
                             <p>
                                 <a href="#" class="button button--icon">
@@ -386,11 +425,13 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
         <div class="footer_wrapper">
             <div class="footer_top">
                 <div class="footer_logo">
-                    <a href="" class="footer_logo--img">
+                    <a href="/Homepage.html" class="footer_logo--img">
                         <img src="/Images/Aquarium BUilder - resize.png" alt="Logo">
                     </a>
                     <ul>
@@ -406,7 +447,7 @@
                             <a href="#">Create</a>
                         </li>
                         <li>
-                            <a href="#">Guides</a>
+                            <a href="/Guides.html">Guides</a>
                         </li>
                         <li>
                             <a href="#">Community</a>

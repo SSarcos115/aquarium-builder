@@ -125,8 +125,12 @@ li {
     margin: 10px;
 }
 
-.nav_account--language select {
+#language-selector {
     width: 100px;
+    background-color: var(--main);
+    color: white;
+    border: none;
+    border-bottom: 1px solid grey;
 }
 
 /* Bottom nav */
@@ -301,9 +305,8 @@ li {
 .guideGroup_target {
     position: absolute;
     display: block;
-    border: 2px solid red;
-    width: 100px;
-    height: 100px;
+    width: 269.500px;
+    height: 530.400px;
 }
 
 .guideGroup_card {
@@ -374,11 +377,6 @@ li {
 
 /* Guide Card Section */
 .guides_cards {
-}
-
-.guideGroup_card a {
-    height: 275.3px;
-    width: 530.4px;
 }
 
 /* Main Page Community Section */
@@ -986,6 +984,13 @@ input::placeholder {
 
 .guidepage_card:hover {
     box-shadow: 0 0 0 2.75px #292b2d;
+}
+
+.guidePage_target {
+    position: absolute;
+    display: block;
+    width: 359.800px;
+    height: 538.800px;
 }
 
 .guide_page_content--wrapper1 {
