@@ -6,7 +6,7 @@
     --hover: #fc5f37;
     --main_dark: #163e5f;
     --main: #113452;
-    --bottom_hover: #306ea145;
+    --bottom_hover: #225178;
     --second: #0a82789d;
 }
 
@@ -28,6 +28,10 @@ html, body, header, nav, div, ul, li, a, section, footer {
 
 nav, section, header {
     display: block;
+}
+
+header {
+    position: relative;
 }
 
 a {
@@ -205,6 +209,44 @@ li {
     align-items: center;
     padding: 15px;
     color: white;
+}
+
+/* Hidden Search Bar */
+#searchBar_wrapper {
+    background-color: var(--bottom_hover);
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.searchBar_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBar {
+    width: 85%;
+    margin-right:20px;
+    padding: 25px 0px;
+}
+
+.searchBar [type=text]{
+    background-color: var(--main_dark);
+}
+
+.search_button [type=submit] {
+    width: 100%;
+    background-color: #388ac9;
+    color: gainsboro;
+    font-size: 1.25rem;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    font-weight: 600;
 }
 
 
