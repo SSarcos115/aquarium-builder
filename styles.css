@@ -1043,6 +1043,19 @@ input::placeholder {
     padding-bottom: 2px;
 }
 
+/* Fish Type Page */
+.fish_type_page_wrapper {
+    background-color: gainsboro;
+}
+
+.fish_page_items {
+}
+
+.fish_page_header_wrapper {
+}
+
+
+
 /* Media Queries */
 @media (max-width: 1349px) {
     .guides { 
