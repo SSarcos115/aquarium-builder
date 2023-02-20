@@ -6,7 +6,7 @@
     --hover: #fc5f37;
     --main_dark: #163e5f;
     --main: #113452;
-    --bottom_hover: #306ea145;
+    --bottom_hover: #225178;
     --second: #0a82789d;
 }
 
@@ -28,6 +28,10 @@ html, body, header, nav, div, ul, li, a, section, footer {
 
 nav, section, header {
     display: block;
+}
+
+header {
+    position: relative;
 }
 
 a {
@@ -125,8 +129,12 @@ li {
     margin: 10px;
 }
 
-.nav_account--language select {
+#language-selector {
     width: 100px;
+    background-color: var(--main);
+    color: white;
+    border: none;
+    border-bottom: 1px solid grey;
 }
 
 /* Bottom nav */
@@ -201,6 +209,44 @@ li {
     align-items: center;
     padding: 15px;
     color: white;
+}
+
+/* Hidden Search Bar */
+#searchBar_wrapper {
+    background-color: var(--bottom_hover);
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.searchBar_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBar {
+    width: 85%;
+    margin-right:20px;
+    padding: 25px 0px;
+}
+
+.searchBar [type=text]{
+    background-color: var(--main_dark);
+}
+
+.search_button [type=submit] {
+    width: 100%;
+    background-color: #388ac9;
+    color: gainsboro;
+    font-size: 1.25rem;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    font-weight: 600;
 }
 
 
@@ -298,6 +344,13 @@ li {
     gap: 15px;
 }
 
+.guideGroup_target {
+    position: absolute;
+    display: block;
+    width: 269.500px;
+    height: 530.400px;
+}
+
 .guideGroup_card {
     background-color: #AD8A64;
     text-align: center;
@@ -366,11 +419,6 @@ li {
 
 /* Guide Card Section */
 .guides_cards {
-}
-
-.guideGroup_card a {
-    height: 275.3px;
-    width: 530.4px;
 }
 
 /* Main Page Community Section */
@@ -486,7 +534,6 @@ li {
     display: block;
     width: 251.850px;
     height: 436.600px;
-    
 }
 
 .logGroup_content--wrapper1 {
@@ -932,6 +979,82 @@ input::placeholder {
     transition: .1s;
     transition-property: #388ac9;
 }
+
+/* Guide Page */
+.guide_page_wrapper {
+    margin: 0;
+    background-color: rgb(243, 243, 243);
+}
+
+.guide_page_header_wrapper {
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 9px;
+    background-color: #AD8A64;
+    margin-bottom: 50px;
+}
+
+.guide_page_items {
+    margin: auto;
+    width: 75%;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.guide_tanks_header {
+    border-bottom: 1px solid black;
+}
+
+.guide_tanks_header > h2 {
+    margin: 0px;
+    padding-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.guide_page_wrap {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.guidepage_card {
+    background-color: #AD8A64;
+    margin: 15px 0px;
+    flex: 1 1 auto;
+}
+
+.guidepage_card:hover {
+    box-shadow: 0 0 0 2.75px #292b2d;
+}
+
+.guidePage_target {
+    position: absolute;
+    display: block;
+    width: 359.800px;
+    height: 538.800px;
+}
+
+.guide_page_content--wrapper1 {
+    padding: 15px;
+}
+
+.guide_page_content--wrapper2 {
+    padding-bottom: 2px;
+}
+
+/* Fish Type Page */
+.fish_type_page_wrapper {
+    background-color: gainsboro;
+}
+
+.fish_page_items {
+}
+
+.fish_page_header_wrapper {
+}
+
+
 
 /* Media Queries */
 @media (max-width: 1349px) {
