@@ -222,7 +222,7 @@ li {
     display: none;
 }
 
-.searchBar_content {
+#searchbar-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,8 +234,16 @@ li {
     padding: 25px 0px;
 }
 
-.searchBar [type=text]{
+.searchBar [type=search]{
     background-color: var(--main_dark);
+    width: 100%;
+    padding: 15px;
+    color: gainsboro;
+    font-size: x-large;
+}
+
+.searchBar ::placeholder {
+    opacity: .75;
 }
 
 .search_button [type=submit] {
@@ -247,6 +255,7 @@ li {
     border-radius: 10%;
     border: none;
     font-weight: 600;
+    cursor: pointer;
 }
 
 
