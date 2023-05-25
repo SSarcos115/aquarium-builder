@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
-    <script src="/script.js"></script>
     <script src="https://kit.fontawesome.com/d1ad965ae2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <title>Aquarium Builder (Working Title)</title>
 </head>   
-<body onclick="hideSearch()">
+<body onclick="searchBarOff()">
     <header>
         <nav class="navigation" role="navigation">
             <div class="nav_desktop">
@@ -64,7 +63,7 @@
                                 <a class="nav_bottom_link" href="/Fish-Types.html"><i class="fa-solid fa-fish nav_icon fa-lg"></i>Fish Types</a>
                             </li>
                         </ul>
-                        <a href="#" role="button" onclick="searchBar()" class="nav_search-bar nav_bottom_link"><i class="fa-solid fa-magnifying-glass nav_icon"></i>
+                        <a href="#" role="button" onclick="searchBarOn()" class="nav_search-bar nav_bottom_link"><i class="fa-solid fa-magnifying-glass nav_icon"></i>
                         </a>
                     </div>
                 </section>
@@ -507,4 +506,5 @@
         </div>    
     </footer>
 </body>
+<script src="/script.js"></script>
 </html>

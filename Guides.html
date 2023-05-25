@@ -56,13 +56,30 @@
                                 <a class="nav_bottom_link" href="/Fish-Types.html"><i class="fa-solid fa-fish nav_icon fa-lg"></i>Fish Types</a>
                             </li>
                         </ul>
-                        <a href="" class="nav_search-bar nav_bottom_link"><i class="fa-solid fa-magnifying-glass nav_icon"></i>
+                        <a href="#" role="button" onclick="searchBarOn()" class="nav_search-bar nav_bottom_link"><i class="fa-solid fa-magnifying-glass nav_icon"></i>
                         </a>
                     </div>
                 </section>
             </div>
 
         </nav>
+
+        <!-- Hidden Search Bar -->
+        <div id="searchBar_wrapper">
+            <div class="searchBar_content">
+                <form action="" id="searchbar-form">
+                    <div class="searchBar">
+                        <label for="site-search"></label>
+                        <input type="search" name="q" placeholder="Search....">
+                    </div>
+                    <div class="search_button">
+                        <button type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </header>
+
     </header>
     <section class="guide_page_wrapper">
         <div class="guide_page_header_wrapper">
@@ -421,5 +438,6 @@
             </div>
         </div>    
     </footer>
+<script src="/script.js"></script>
 </body>
 </html>

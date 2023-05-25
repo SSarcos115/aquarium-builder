@@ -46,7 +46,7 @@
     <section class="register_page_wrapper">
         <h1 class="register_header">Register</h1>
         <div class="register_content">
-            <div>
+            <form>
                 <div class="register_fields">
                     <h2>Create a new account</h2>
                     <label for="username">
@@ -55,28 +55,25 @@
                     <label for="email">
                         <input type="email" placeholder="Email" name="email" maxlength="75" required>
                     </label>
-                    <label for="email confirmation">
-                        <input type="email" placeholder="Email (again)" name="email_confirmation" maxlength="75" required>
-                    </label>
                     <p id="account_activation_note">
                         Note: An account activation email will be sent to the email address you provide.
                     </p>
                     <label for="password">
-                        <input type="text" placeholder="Password" name="password" maxlength="75"
+                        <input id="password" type="text" placeholder="Password" name="password" maxlength="75"
                     required>
                     </label>
                     <label for="password confirmation">
-                        <input type="text" placeholder="Password (again)" name="password_confirmation" maxlength="75"
+                        <input id="confirm_password" type="text" placeholder="Password (again)" name="password_confirmation" maxlength="75"
                     required>
                     </label>
                     <label for="terms of service" class="container">
-                        <input type="checkbox">
+                        <input type="checkbox" required>
                         <span class="checkmark"></span>
                         I have read and consent to the 
                         <a href="#">Terms of Service</a>
                     </label>
                     <label for="user code of conduct" class="container">
-                        <input type="checkbox">
+                        <input type="checkbox" required>
                         <span class="checkmark"></span>
                         I have read and consent to the 
                         <a href="#">User Code of Conduct</a>
@@ -85,7 +82,7 @@
                         By registering you consent to allow AquariumBuilder to retain personal information consisting of your email address and IP addresses used to access the site. AquariumBuilder does not sell your personal information. Details on what data we retain and how we use it can be found in our
                         <a href="#">Privacy Policy</a>
                     </p>
-                    <a href="#" class="register_btn" role="button">Register</a>
+                    <button class="register_btn">Register</button>
                 </div>
                 <div class="sign_in_wrapper">
                     <h2>Already a Member?</h2>
@@ -93,7 +90,7 @@
                         <a href="/Log-in.html" class="sign_in_action">Sign In</a>
                     </p>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
 </body>

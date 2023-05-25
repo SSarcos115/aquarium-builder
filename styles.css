@@ -757,7 +757,7 @@ footer a:hover {
 }
 
 .login_content {
-    background-color: rgb(228, 228, 228);
+    background-color: rgba(232, 232, 232, 0.913);
     width: 25%;
     margin: auto;
     padding: 50px;
@@ -812,10 +812,8 @@ input::placeholder {
 .login_fields > .submit_btn {
    background-color: #46aefe;
    color: rgb(255, 255, 255);
-   height: 27px;
-   text-align: center;
-   padding-top: 5px;
-   font-size: 1.25rem;
+   padding: 6px;
+   font-size: large;
 }
 
 .login_fields > .submit_btn:hover {
@@ -927,9 +925,7 @@ input::placeholder {
 .register_fields > .register_btn {
    background-color: #46aefe;
    color: rgb(255, 255, 255);
-   height: 27px;
-   text-align: center;
-   padding-top: 5px;
+   padding: 5px;
    font-size: 1.25rem;
 }
 
