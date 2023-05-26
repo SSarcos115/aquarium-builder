@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <title>Aquarium Builder (Working Title)</title>
 </head>   
-<body onclick="hideSearch()">
+<body>
     <header>
         <nav class="navigation" role="navigation">
             <div class="nav_desktop">
@@ -86,18 +86,104 @@
         </div>
     </header>
 
-    <section>
-        <div class="fish_type_page_wrapper">
-            <div class="fish_page_items">
-                <div class="fish_page_header_wrapper">
-                    <h1>Fish Types</h1>
-                    <p>Brush up on your knowledge of your favorite fish or discover a new species that you would love to have in your next aquarium!</p>
-                </div>
-                <div class="fish_types"></div>
-            </div>
+    <section class="create-table-template">
+        <div class="create-table-wrapper">
+            <table class="pcpp-part-list">
+            <thead>
+                <tr>
+                <th>Type</th>
+                <th>Item</th>
+                <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td class="pcpp-part-list-type">CPU</td>
+                <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/g94BD3/amd-ryzen-5-5600x-37-ghz-6-core-processor-100-100000065box">\*AMD Ryzen 5 5600X 3.7 GHz 6-Core Processor</a></td>
+                <td class="pcpp-part-list-price">
+                    <a href="https://pcpartpicker.com/product/g94BD3/amd-ryzen-5-5600x-37-ghz-6-core-processor-100-100000065box">$149.34 @ Amazon</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="pcpp-part-list-type">CPU Cooler</td>
+                <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/xfcG3C/cooler-master-hyper-212-black-edition-42-cfm-cpu-cooler-rr-212s-20pk-r2">\*Cooler Master Hyper 212 Black Edition 42 CFM CPU Cooler</a></td>
+                <td class="pcpp-part-list-price">
+                    <a href="https://pcpartpicker.com/product/xfcG3C/cooler-master-hyper-212-black-edition-42-cfm-cpu-cooler-rr-212s-20pk-r2">$37.98 @ Newegg</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="pcpp-part-list-type">Motherboard</td>
+                <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/dmGnTW/asus-tuf-gaming-x570-plus-wi-fi-atx-am4-motherboard-tuf-gaming-x570-plus-wi-fi">\*Asus TUF GAMING X570-PLUS (WI-FI) ATX AM4 Motherboard</a></td>
+                <td class="pcpp-part-list-price">
+                    <a href="https://pcpartpicker.com/product/dmGnTW/asus-tuf-gaming-x570-plus-wi-fi-atx-am4-motherboard-tuf-gaming-x570-plus-wi-fi">$209.99 @ Amazon</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="pcpp-part-list-type">Memory</td>
+                <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/khmFf7/corsair-vengeance-rgb-pro-32-gb-2-x-16-gb-ddr4-3600-memory-cmw32gx4m2z3600c18">\*Corsair Vengeance RGB Pro 32 GB (2 x 16 GB) DDR4-3600 CL18 Memory</a></td>
+                <td class="pcpp-part-list-price">
+                    <a href="https://pcpartpicker.com/product/khmFf7/corsair-vengeance-rgb-pro-32-gb-2-x-16-gb-ddr4-3600-memory-cmw32gx4m2z3600c18">$102.05 @ Amazon</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="pcpp-part-list-type">Storage</td>
+                <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/sw4Ycf/crucial-p3-1-tb-m2-2280-nvme-solid-state-drive-ct1000p3ssd8">\*Crucial P3 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive</a></td>
+                <td class="pcpp-part-list-price">
+                    <a href="https://pcpartpicker.com/product/sw4Ycf/crucial-p3-1-tb-m2-2280-nvme-solid-state-drive-ct1000p3ssd8">$45.80 @ Amazon</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="pcpp-part-list-type">Video Card</td>
+                <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/pD8bt6/msi-geforce-rtx-3060-ventus-2x-12g-geforce-rtx-3060-12gb-12-gb-video-card-rtx3060ventus2x12goc">\*MSI GeForce RTX 3060 Ventus 2X 12G GeForce RTX 3060 12GB 12 GB Video Card</a></td>
+                <td class="pcpp-part-list-price">
+                    <a href="https://pcpartpicker.com/product/pD8bt6/msi-geforce-rtx-3060-ventus-2x-12g-geforce-rtx-3060-12gb-12-gb-video-card-rtx3060ventus2x12goc">$289.99 @ Newegg</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="pcpp-part-list-type">Case</td>
+                <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/crqBD3/phanteks-eclipse-p300a-mesh-atx-mid-tower-case-ph-ec300atg_bk01">\*Phanteks Eclipse P300A Mesh ATX Mid Tower Case</a></td>
+                <td class="pcpp-part-list-price">
+                    <a href="https://pcpartpicker.com/product/crqBD3/phanteks-eclipse-p300a-mesh-atx-mid-tower-case-ph-ec300atg_bk01">$59.99 @ Newegg</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="pcpp-part-list-type">Power Supply</td>
+                <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/6NcG3C/corsair-rm750x-2021-750-w-80-gold-certified-fully-modular-atx-power-supply-cp-9020199-na">\*Corsair RM750x (2021) 750 W 80+ Gold Certified Fully Modular ATX Power Supply</a></td>
+                <td class="pcpp-part-list-price">
+                    <a href="https://pcpartpicker.com/product/6NcG3C/corsair-rm750x-2021-750-w-80-gold-certified-fully-modular-atx-power-supply-cp-9020199-na">$114.99 @ Walmart</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="pcpp-part-list-type">Operating System</td>
+                <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/dKkWGX/microsoft-windows-11-home-oem-dvd-64-bit-kw9-00633">\*Microsoft Windows 11 Home OEM - DVD 64-bit</a></td>
+                <td class="pcpp-part-list-price">
+                    <a href="https://pcpartpicker.com/product/dKkWGX/microsoft-windows-11-home-oem-dvd-64-bit-kw9-00633">$99.99 @ Newegg</a>
+                </td>
+                </tr>
+                <tr>
+                <td></td>
+                <td class="pcpp-part-list-price-note">Prices include shipping, taxes, rebates, and discounts</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td></td>
+                <td class="pcpp-part-list-subtotal">Total (before mail-in rebates)</td>
+                <td class="pcpp-part-list-subtotal-price">$1140.12</td>
+                </tr>
+                <tr>
+                <td></td>
+                <td class="pcpp-part-list-subtotal">Mail-in rebates</td>
+                <td class="pcpp-part-list-subtotal-price">-$30.00</td>
+                </tr>
+                <tr>
+                <td></td>
+                <td class="pcpp-part-list-total">Total</td>
+                <td class="pcpp-part-list-total-price">$1110.12</td>
+                </tr>
+            </tbody>
+            </table>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="footer_wrapper">

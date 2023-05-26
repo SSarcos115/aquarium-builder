@@ -1059,6 +1059,22 @@ input::placeholder {
 .fish_page_header_wrapper {
 }
 
+/* Create Page */
+
+.create-table-template {
+    background-color: gainsboro;
+}
+
+.create-table-wrapper {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+tr, th, td {
+    border: 1px solid;
+}
 
 
 /* Media Queries */
@@ -1103,4 +1119,3 @@ input::placeholder {
     .guides_info > p {
         padding-right: 0px;
     }
-}
